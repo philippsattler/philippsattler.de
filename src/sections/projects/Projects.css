@@ -1,0 +1,144 @@
+.projects {
+  width: 100%;
+}
+
+.projects-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #22c55e;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.5rem;
+  background: rgba(34, 197, 94, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #22c55e 50%, #16a34a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hobby-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.hobby-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(34, 197, 94, 0.4);
+  transform: translateY(-5px);
+}
+
+.hobby-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.hobby-content {
+  flex: 1;
+}
+
+.hobby-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.hobby-description {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 0 1.5rem;
+  }
+  
+  .projects-header {
+    margin-bottom: 3rem;
+  }
+  
+  .hobbies-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .hobby-card {
+    padding: 1.5rem;
+  }
+  
+  .hobby-icon {
+    font-size: 2.5rem;
+  }
+  
+  .hobby-title {
+    font-size: 1.2rem;
+  }
+  
+  .hobby-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    padding: 0 1rem;
+  }
+  
+  .projects-header {
+    margin-bottom: 2rem;
+  }
+  
+  .hobby-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  
+  .hobby-icon {
+    font-size: 2rem;
+  }
+  
+  .hobby-title {
+    font-size: 1.1rem;
+  }
+  
+  .hobby-description {
+    font-size: 0.9rem;
+  }
+}

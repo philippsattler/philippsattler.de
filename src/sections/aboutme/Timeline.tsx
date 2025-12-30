@@ -4,33 +4,60 @@ import './Timeline.css'
 const Timeline = () => {
   return (
     <div className="aboutme">
-      <h2>Über mich</h2>
-      <div className="timeline">
-        <div className="outer">
-          <div className="card">
-            <div className="info">
-              <h3 className="title">Ausbildung</h3>
-              <p>Nach meiner mittleren Reife habe ich im September 2020 eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung begonnen. Diese habe ich im Juli 2023 mit guten Ergebnissen absolviert.</p>
-            </div>
+      <h2 className="section-title">Berufserfahrung & Ausbildung</h2>
+      <div className="about-grid">
+        <div className="about-card featured">
+          <div className="about-card-header">
+            <div className="about-icon">💼</div>
+            <h3 className="about-card-title">Softwareentwickler</h3>
           </div>
-          <div className="card">
-            <div className="info">
-              <h3 className="title">Arbeit</h3>
-              <p>Seither arbeite ich in meinem Ausbildungsbetrieb als Softwareentwickler und bin neben der Entwicklung von Webanwendungen mit React, TypeScript und Java auch für die Arbeit im BI mit QlikSense zuständig.</p>
-            </div>
+          <p className="about-card-date">11/2024 - Jetzt</p>
+          <p className="about-card-text">
+            Aktuell arbeite ich als Softwareentwickler und bin verantwortlich für die Webentwicklung mit Angular und React. 
+            Zu meinen Aufgaben gehören die IT-Systemadministration, IT-Projektmanagement sowie die Mikrocontrollerprogrammierung 
+            mit dem Raspberry Pi.
+          </p>
+        </div>
+        
+        <div className="about-card">
+          <div className="about-card-header">
+            <div className="about-icon">👨‍💻</div>
+            <h3 className="about-card-title">Junior Softwareentwickler</h3>
           </div>
-          <div className="card">
-            <div className="info">
-              <h3 className="title">Privates</h3>
-              <p>Neben meinem Beruf interessiere ich mich auch privat für die Informatik. Dazu zählen unter anderem Hard- und Softwareprojekte mit dem Raspberry Pi und Linux-Servern.</p>
-            </div>
+          <p className="about-card-date">06/2023 - 10/2024</p>
+          <p className="about-card-text">
+            Als Junior Softwareentwickler entwickelte ich Webanwendungen mit React, TypeScript und Java. 
+            Zudem war ich für die Entwicklung von Java GUI-Anwendungen, die Neuentwicklung von QlikSense Apps 
+            sowie die Migration von QlikView Apps verantwortlich.
+          </p>
+        </div>
+        
+        <div className="about-card">
+          <div className="about-card-header">
+            <div className="about-icon">🎓</div>
+            <h3 className="about-card-title">Ausbildung Fachinformatiker</h3>
           </div>
-          <div className="card">
-            <div className="info">
-              <h3 className="title">Hobbys</h3>
-              <p>Wenn ich gerade nicht am Computer sitze, spiele ich gerne Tennis im Verein. Außerdem besuche ich regelmäßig das Fitnessstudio und spiele Geige im Orchester.</p>
-            </div>
+          <p className="about-card-date">09/2020 - 06/2023</p>
+          <p className="about-card-text">
+            Während meiner Ausbildung zum Fachinformatiker für Anwendungsentwicklung lernte ich die Grundlagen verschiedener 
+            Programmiersprachen, erstellte statische Websites mit HTML5 und CSS3, arbeitete mit serverseitigem und clientseitigem 
+            JavaScript mit Node.js und React, beschäftigte mich mit IT-Darstellungstechniken, IT-Projektmanagement 
+            und Mikrocontrollerprogrammierung mit dem Raspberry Pi.
+          </p>
+        </div>
+        
+        <div className="about-card">
+          <div className="about-card-header">
+            <div className="about-icon">🚀</div>
+            <h3 className="about-card-title">Fortbildung Bachelor Professional</h3>
           </div>
+          <p className="about-card-date">09/2025 - 09/2027 (geplant)</p>
+          <p className="about-card-text">
+            Ab September 2025 beginne ich eine Fortbildung zum Bachelor Professional in IT (IHK) bei der{' '}
+            <a href="https://www.management-qualifizierung.de/it-fortbildungen/bachelor-professional-in-it-ihk" target="_blank" rel="noopener noreferrer" className="about-link">manQ Akademie</a>. 
+            Diese berufsbegleitende Weiterbildung im Live-Online-Format (DQR-Niveau 6) ermöglicht es mir, mein Wissen auf ein höheres Niveau zu bringen 
+            und mich für anspruchsvolle Aufgaben in der IT-Branche zu qualifizieren. Der Abschluss steht auf einer Stufe mit Meister, Techniker und Bachelor.
+          </p>
         </div>
       </div>
     </div>

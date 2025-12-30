@@ -1,98 +1,177 @@
 .card-container {
-    background-color: #231E39;
-    border-radius: 5px;
-    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-    color: #B3B8CD;
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 65px;
-    position: relative;
-    width: 350px;
-    height: 600px;
-    max-width: 100%;
-    text-align: center;
-    margin: auto;
-  }
-  
-  .card-container .round {
-    border: 1px solid #03BFCB;
-    border-radius: 50%;
-    padding: 7px;
-    width: 50%;
-    transition: transform .2s; 
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-  }
-  
-  .round:hover {
-    transform: scale(1.25);
-  }
-  
-  .card-container .desc {
-    border: 1px solid #03BFCB;
-    border-radius: 50%;
-    padding: 7px;
-  }
-  
-  button.primary {
-    background-color: #03BFCB;
-    border: 1px solid #03BFCB;
-    border-radius: 3px;
-    color: #231E39;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    padding: 10px 25px;
-  }
-  
-  button.primary.ghost {
-    background-color: transparent;
-    color: #02899C;
-  }
-  
-  .skills {
-    background-color: #1F1A36;
-    text-align: left;
-    padding: 15px;
-    padding-top: 1px;
-  }
-  
-  .skills ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .skills ul li {
-    border: 1px solid #2D2747;
-    border-radius: 2px;
-    display: inline-block;
-    font-size: 12px;
-    margin: 0 7px 7px 0;
-    padding: 7px;
-  }
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
 
-  .card-section {
-    margin-top: 135px;
-    margin-bottom: 120px;
+.card-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(20, 184, 166, 0.15);
+}
+
+.card-image-wrapper {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #14b8a6;
+  box-shadow: 0 10px 40px rgba(20, 184, 166, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #14b8a6;
+  margin: 0;
+}
+
+.card-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #475569;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.card-link {
+  color: #14b8a6;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.card-link:hover {
+  color: #06b6d4;
+  border-bottom-color: #06b6d4;
+}
+
+.skills-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.skills-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-start;
+}
+
+.skill-tag {
+  background: linear-gradient(135deg, #14b8a6 0%, #06b6d4 100%);
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(20, 184, 166, 0.2);
+}
+
+.skill-tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(20, 184, 166, 0.35);
+}
+
+.languages-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.languages-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.language-item {
+  font-size: 1rem;
+  color: #475569;
+  padding: 0.5rem 0;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    padding: 2rem 1.5rem;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .card-name {
+    font-size: 1.9rem;
+  }
+  
+  .card-description {
     text-align: center;
   }
   
-  .card-content {
-    max-width: 600px;
-    margin: 0 auto;
+  .skills-title {
+    text-align: center;
   }
   
-  .card-content h2 {
-    color: #000;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  .skills-grid {
+    justify-content: center;
   }
   
-  .card-content p {
-    color: #000;
-    font-size: 20px;
-    line-height: 1.5;
+  .languages-title {
+    text-align: center;
   }
+  
+  .language-item {
+    text-align: center;
+  }
+}

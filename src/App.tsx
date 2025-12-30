@@ -1,30 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Timeline from './sections/aboutme/Timeline.tsx'
-import Card from './sections/card/Card.tsx';
-import Contact from './sections/contact/Contact.tsx';
+import Home from './pages/Home.tsx';
+import NotFound from './components/NotFound.tsx';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="CMD-Style">hello, world</h1>
-      </header>
-      <main className="App-main">
-        <section className="card-section">
-          <Card />
-        </section>
-        <section>
-          <Timeline />
-        </section>
-        <section className="contact-section">
-          <Contact />
-        </section>
-      </main>
-      <footer className="App-footer">
-        &copy; 2024 Philipp Sattler
-      </footer>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 };
 
